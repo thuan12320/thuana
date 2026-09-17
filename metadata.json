@@ -1,0 +1,6 @@
+{
+  "name": "Lumière Omni - Video Affiliate Thời Trang AI",
+  "description": "Ứng dụng tạo video Affiliate thời trang tối đa 10s sử dụng Google Omni 1.1 Flash với tuỳ chỉnh độ dài, tỷ lệ khung hình, clone video ref, nhân vật, sản phẩm và background Industrial Penthouse.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

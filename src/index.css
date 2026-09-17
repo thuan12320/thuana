@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-content: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-label: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-be-vietnam: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-inter: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #faf9f6;
+    color: #262320;
+    font-family: var(--font-be-vietnam);
+    line-height: 1.68;
+    letter-spacing: -0.005em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  /* Content typography: high-readability Be Vietnam Pro with comfortable line-height for Vietnamese diacritics */
+  p, article, .font-content {
+    font-family: var(--font-be-vietnam);
+    line-height: 1.68;
+    letter-spacing: -0.004em;
+  }
+
+  /* Luxury Titles & Headings: Gentle, refined letter-spacing for high-end aesthetic */
+  h1, h2, h3, h4, h5, h6, .luxury-heading, .font-display {
+    font-family: var(--font-be-vietnam);
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.008em;
+    color: #1c1917;
+  }
+
+  h1 {
+    letter-spacing: -0.012em;
+    line-height: 1.28;
+  }
+
+  h2 {
+    letter-spacing: -0.009em;
+    line-height: 1.32;
+  }
+
+  h3 {
+    letter-spacing: -0.007em;
+    line-height: 1.36;
+  }
+
+  h4, h5, h6 {
+    letter-spacing: -0.005em;
+    line-height: 1.4;
+  }
+
+  /* Labels, Badges, Controls, Buttons: Inter for crisp, clear visual hierarchy */
+  label,
+  button,
+  input,
+  select,
+  textarea,
+  .font-label,
+  .font-inter,
+  [role="tab"],
+  [role="button"] {
+    font-family: var(--font-inter);
+    letter-spacing: -0.002em;
+  }
+}
+
+/* Custom utility classes for luxury editorial styling */
+.font-content {
+  font-family: var(--font-be-vietnam) !important;
+  line-height: 1.68;
+}
+
+.font-label {
+  font-family: var(--font-inter) !important;
+}
+
+.tracking-luxury {
+  letter-spacing: 0.04em !important;
+}
+
+.tracking-luxury-tight {
+  letter-spacing: -0.008em !important;
+}
+
+/* Custom scrollbars - quiet and minimal */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2ddd5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8c0b5;
+}
+
+/* Custom Range Slider */
+input[type="range"] {
+  accent-color: #c25e2e;
+}
+
